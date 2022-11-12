@@ -5,8 +5,8 @@ pipeline {
             steps {
                 // Get code from a GitHub repository
                 git branch: 'main', url: 'https://github.com/restuputra3007/belajar.build.jenkins.git';
-               //echo 'Build';
-               "mvn clean install package assembly:single";
+               echo 'Build';
+               //"mvn clean install package assembly:single";
             }
         }
         stage('Run') {
