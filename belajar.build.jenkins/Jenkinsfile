@@ -9,7 +9,7 @@ pipeline {
             }
         }
         stage('Run') {
-            java -jar .\target\belajar.build.jenkins-1.0-SNAPSHOT-jar-with-dependencies.jar
+            'java -jar .\target\belajar.build.jenkins-1.0-SNAPSHOT-jar-with-dependencies.jar'
         }
     }
 }
