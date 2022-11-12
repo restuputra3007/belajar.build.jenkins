@@ -1,6 +1,12 @@
 pipeline {
     agent any
     stages {
+        stage('Initialize'){
+            steps{
+                bat "java -version"
+                bat "mvn -version"
+            }
+        }
         stage('Build') {
             steps {
                 // Get code from a GitHub repository
