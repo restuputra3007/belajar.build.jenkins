@@ -5,12 +5,14 @@ pipeline {
             steps {
                 // Get code from a GitHub repository
                //echo 'Build';
-               'mvn clean install package assembly:single'
+               'mvn clean install package assembly:single';
             }
         }
         stage('Run') {
-            echo 'Run';
-            //'java -jar .\target\belajar.build.jenkins-1.0-SNAPSHOT-jar-with-dependencies.jar'
+            steps {
+                echo 'Run';
+                //'java -jar .\target\belajar.build.jenkins-1.0-SNAPSHOT-jar-with-dependencies.jar'
+            }
         }
     }
 }
