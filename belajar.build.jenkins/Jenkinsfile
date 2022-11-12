@@ -5,7 +5,7 @@ pipeline {
             steps {
                 // Get code from a GitHub repository
                //echo 'Build';
-               mvn clean install package assembly:single
+               'mvn clean install package assembly:single'
             }
         }
         stage('Run') {
