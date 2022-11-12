@@ -12,7 +12,7 @@ pipeline {
                 // Get code from a GitHub repository
                 //git branch: 'main', url: 'https://github.com/restuputra3007/belajar.build.jenkins.git'
                echo 'Build'
-               bat "cd C:\ProgramData\Jenkins\.jenkins\workspace\DemoJenkinsPipeline\belajar.build.jenkins"
+               bat "cd belajar.build.jenkins"
                bat "mvn clean install package assembly:single"
             }
         }
